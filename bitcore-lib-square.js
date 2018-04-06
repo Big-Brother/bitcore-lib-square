@@ -5220,13 +5220,10 @@ addNetwork({
   scripthash: 0x10,
   xpubkey: 0x488b21e,    // 'xpub' (Bitcoin Default)
   xprivkey: 0x488ade4,   // 'xprv' (Bitcoin Default)
-  networkMagic: 0xbf0c6bbd,
+  networkMagic: 0xbaece1de,
   port: 6666,
   dnsSeeds: [
-    'dnsseed.darkcoin.io',
-    'dnsseed.squaredot.io',
-    'dnsseed.masternode.io',
-    'dnsseed.squarepay.io'
+    'seeds.cryptoseeds.xyz'
   ]
 });
 
@@ -5256,11 +5253,9 @@ var testnet = get('testnet');
 
 var TESTNET = {
   PORT: 16666,
-  NETWORK_MAGIC: BufferUtil.integerAsBuffer(0xcee2caff),
+  NETWORK_MAGIC: BufferUtil.integerAsBuffer(0xeceebcfe),
   DNS_SEEDS: [
-    'testnet-seed.darkcoin.io',
-    'testnet-seed.squaredot.io',
-    'test.dnsseed.masternode.io'
+    'testnet-seeds.cryptoseeds.xyz'
   ]
 };
 
@@ -5271,8 +5266,8 @@ for (var key in TESTNET) {
 }
 
 var REGTEST = {
-  PORT: 19994,
-  NETWORK_MAGIC: BufferUtil.integerAsBuffer(0xfcc1b7dc),
+  PORT: 16664,
+  NETWORK_MAGIC: BufferUtil.integerAsBuffer(0xfad2c8dd),
   DNS_SEEDS: []
 };
 

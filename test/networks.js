@@ -18,17 +18,15 @@ describe('Networks', function() {
   it('will enable/disable regtest Network', function() {
     networks.enableRegtest();
     networks.testnet.networkMagic.should.deep.equal(new Buffer('fcc1b7dc', 'hex'));
-    networks.testnet.port.should.equal(19994);
+    networks.testnet.port.should.equal(16664);
     networks.testnet.dnsSeeds.should.deep.equal([]);
     networks.testnet.regtestEnabled.should.equal(true);
 
     networks.disableRegtest();
     networks.testnet.networkMagic.should.deep.equal(new Buffer('cee2caff', 'hex'));
-    networks.testnet.port.should.equal(19999);
+    networks.testnet.port.should.equal(16666);
     networks.testnet.dnsSeeds.should.deep.equal([
-     'testnet-seed.darkcoin.io',
-     'testnet-seed.squaredot.io',
-     'test.dnsseed.masternode.io'
+     'testnet-seeds.cryptoseeds.xyz'
     ]);
   });
 
