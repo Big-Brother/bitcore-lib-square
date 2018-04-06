@@ -2,7 +2,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 (function (Buffer){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var $ = require('./util/preconditions');
 var errors = require('./errors');
 var Base58Check = require('./encoding/base58check');
@@ -500,11 +500,11 @@ module.exports = Address;
 var Script = require('./script');
 
 }).call(this,require("buffer").Buffer)
-},{"./crypto/hash":8,"./encoding/base58check":13,"./errors":17,"./networks":25,"./publickey":28,"./script":29,"./util/js":47,"./util/preconditions":48,"buffer":118,"l*o*d*a*s*h":192}],2:[function(require,module,exports){
+},{"./crypto/hash":8,"./encoding/base58check":13,"./errors":17,"./networks":25,"./publickey":28,"./script":29,"./util/js":47,"./util/preconditions":48,"buffer":118,"lodash":192}],2:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var BlockHeader = require('./blockheader');
 var BN = require('../crypto/bn');
 var BufferUtil = require('../util/buffer');
@@ -785,11 +785,11 @@ Block.Values = {
 module.exports = Block;
 
 }).call(this,require("buffer").Buffer)
-},{"../crypto/bn":6,"../crypto/hash":8,"../encoding/bufferreader":14,"../encoding/bufferwriter":15,"../transaction":32,"../util/buffer":46,"../util/preconditions":48,"./blockheader":3,"buffer":118,"l*o*d*a*s*h":192}],3:[function(require,module,exports){
+},{"../crypto/bn":6,"../crypto/hash":8,"../encoding/bufferreader":14,"../encoding/bufferwriter":15,"../transaction":32,"../util/buffer":46,"../util/preconditions":48,"./blockheader":3,"buffer":118,"lodash":192}],3:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var BN = require('../crypto/bn');
 var BufferUtil = require('../util/buffer');
 var BufferReader = require('../encoding/bufferreader');
@@ -1086,7 +1086,7 @@ BlockHeader.Constants = {
 module.exports = BlockHeader;
 
 }).call(this,require("buffer").Buffer)
-},{"../crypto/bn":6,"../crypto/hash":8,"../encoding/bufferreader":14,"../encoding/bufferwriter":15,"../util/buffer":46,"../util/js":47,"../util/preconditions":48,"buffer":118,"l*o*d*a*s*h":192}],4:[function(require,module,exports){
+},{"../crypto/bn":6,"../crypto/hash":8,"../encoding/bufferreader":14,"../encoding/bufferwriter":15,"../util/buffer":46,"../util/js":47,"../util/preconditions":48,"buffer":118,"lodash":192}],4:[function(require,module,exports){
 module.exports = require('./block');
 
 module.exports.BlockHeader = require('./blockheader');
@@ -1096,7 +1096,7 @@ module.exports.MerkleBlock = require('./merkleblock');
 (function (Buffer){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var BlockHeader = require('./blockheader');
 var BufferUtil = require('../util/buffer');
 var BufferReader = require('../encoding/bufferreader');
@@ -1368,13 +1368,13 @@ MerkleBlock.fromObject = function fromObject(obj) {
 module.exports = MerkleBlock;
 
 }).call(this,require("buffer").Buffer)
-},{"../crypto/hash":8,"../encoding/bufferreader":14,"../encoding/bufferwriter":15,"../transaction":32,"../util/buffer":46,"../util/js":47,"../util/preconditions":48,"./blockheader":3,"buffer":118,"l*o*d*a*s*h":192}],6:[function(require,module,exports){
+},{"../crypto/hash":8,"../encoding/bufferreader":14,"../encoding/bufferwriter":15,"../transaction":32,"../util/buffer":46,"../util/js":47,"../util/preconditions":48,"./blockheader":3,"buffer":118,"lodash":192}],6:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
 var BN = require('bn.js');
 var $ = require('../util/preconditions');
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 
 var reversebuf = function(buf) {
   var buf2 = new Buffer(buf.length);
@@ -1574,7 +1574,7 @@ BN.pad = function(buf, natlen, size) {
 module.exports = BN;
 
 }).call(this,require("buffer").Buffer)
-},{"../util/preconditions":48,"bn.js":67,"buffer":118,"l*o*d*a*s*h":192}],7:[function(require,module,exports){
+},{"../util/preconditions":48,"bn.js":67,"buffer":118,"lodash":192}],7:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -1585,7 +1585,7 @@ var PublicKey = require('../publickey');
 var Random = require('./random');
 var Hash = require('./hash');
 var BufferUtil = require('../util/buffer');
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var $ = require('../util/preconditions');
 
 var ECDSA = function ECDSA(obj) {
@@ -1874,7 +1874,7 @@ ECDSA.verify = function(hashbuf, sig, pubkey, endian) {
 module.exports = ECDSA;
 
 }).call(this,require("buffer").Buffer)
-},{"../publickey":28,"../util/buffer":46,"../util/preconditions":48,"./bn":6,"./hash":8,"./point":9,"./random":10,"./signature":11,"buffer":118,"l*o*d*a*s*h":192}],8:[function(require,module,exports){
+},{"../publickey":28,"../util/buffer":46,"../util/preconditions":48,"./bn":6,"./hash":8,"./point":9,"./random":10,"./signature":11,"buffer":118,"lodash":192}],8:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -2185,7 +2185,7 @@ module.exports = Random;
 'use strict';
 
 var BN = require('./bn');
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var $ = require('../util/preconditions');
 var BufferUtil = require('../util/buffer');
 var JSUtil = require('../util/js');
@@ -2496,11 +2496,11 @@ Signature.SIGHASH_ANYONECANPAY = 0x80;
 module.exports = Signature;
 
 }).call(this,require("buffer").Buffer)
-},{"../util/buffer":46,"../util/js":47,"../util/preconditions":48,"./bn":6,"buffer":118,"l*o*d*a*s*h":192}],12:[function(require,module,exports){
+},{"../util/buffer":46,"../util/js":47,"../util/preconditions":48,"./bn":6,"buffer":118,"lodash":192}],12:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var bs58 = require('bs58');
 var buffer = require('buffer');
 
@@ -2570,11 +2570,11 @@ Base58.prototype.toString = function() {
 module.exports = Base58;
 
 }).call(this,require("buffer").Buffer)
-},{"bs58":115,"buffer":118,"l*o*d*a*s*h":192}],13:[function(require,module,exports){
+},{"bs58":115,"buffer":118,"lodash":192}],13:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var Base58 = require('./base58');
 var buffer = require('buffer');
 var sha256sha256 = require('../crypto/hash').sha256sha256;
@@ -2669,11 +2669,11 @@ Base58Check.prototype.toString = function() {
 module.exports = Base58Check;
 
 }).call(this,require("buffer").Buffer)
-},{"../crypto/hash":8,"./base58":12,"buffer":118,"l*o*d*a*s*h":192}],14:[function(require,module,exports){
+},{"../crypto/hash":8,"./base58":12,"buffer":118,"lodash":192}],14:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var $ = require('../util/preconditions');
 var BufferUtil = require('../util/buffer');
 var BN = require('../crypto/bn');
@@ -2871,7 +2871,7 @@ BufferReader.prototype.readReverse = function(len) {
 module.exports = BufferReader;
 
 }).call(this,require("buffer").Buffer)
-},{"../crypto/bn":6,"../util/buffer":46,"../util/preconditions":48,"buffer":118,"l*o*d*a*s*h":192}],15:[function(require,module,exports){
+},{"../crypto/bn":6,"../util/buffer":46,"../util/preconditions":48,"buffer":118,"lodash":192}],15:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -3105,7 +3105,7 @@ module.exports = Varint;
 },{"../crypto/bn":6,"./bufferreader":14,"./bufferwriter":15,"buffer":118}],17:[function(require,module,exports){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 
 function format(message, args) {
   return message
@@ -3165,7 +3165,7 @@ module.exports.extend = function(spec) {
   return traverseNode(bitcore.Error, spec);
 };
 
-},{"./spec":18,"l*o*d*a*s*h":192}],18:[function(require,module,exports){
+},{"./spec":18,"lodash":192}],18:[function(require,module,exports){
 'use strict';
 
 var docsURL = 'http://bitcore.io/';
@@ -3379,7 +3379,7 @@ module.exports = [{
 (function (Buffer){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var $ = require('../util/preconditions');
 var buffer = require('buffer');
 var compare = Buffer.compare || require('buffer-compare');
@@ -3585,7 +3585,7 @@ GovObject.shallowCopy = function(govObject) {
 module.exports = GovObject;
 
 }).call(this,require("buffer").Buffer)
-},{"../address":1,"../encoding/bufferreader":14,"../encoding/bufferwriter":15,"../errors":17,"../util/buffer":46,"../util/js":47,"../util/preconditions":48,"buffer":118,"buffer-compare":116,"l*o*d*a*s*h":192}],20:[function(require,module,exports){
+},{"../address":1,"../encoding/bufferreader":14,"../encoding/bufferwriter":15,"../errors":17,"../util/buffer":46,"../util/js":47,"../util/preconditions":48,"buffer":118,"buffer-compare":116,"lodash":192}],20:[function(require,module,exports){
 module.exports = require('./govobject');
 
 module.exports.Proposal = require('./types/proposal');
@@ -3593,7 +3593,7 @@ module.exports.Proposal = require('./types/proposal');
 },{"./govobject":19,"./types/proposal":21}],21:[function(require,module,exports){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var $ = require('../../util/preconditions');
 var GovObject = require('../govobject');
 var errors = require('../../errors');
@@ -3761,14 +3761,14 @@ Proposal.prototype.getSerializationError = function(opts) {
 
 module.exports = Proposal;
 
-},{"../../errors":17,"../../util/preconditions":48,"../govobject":19,"l*o*d*a*s*h":192,"util":260}],22:[function(require,module,exports){
+},{"../../errors":17,"../../util/preconditions":48,"../govobject":19,"lodash":192,"util":260}],22:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
 
 var assert = require('assert');
 var buffer = require('buffer');
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var $ = require('./util/preconditions');
 
 var BN = require('./crypto/bn');
@@ -4411,11 +4411,11 @@ assert(HDPrivateKey.ChecksumEnd === HDPrivateKey.SerializedByteSize);
 module.exports = HDPrivateKey;
 
 }).call(this,require("buffer").Buffer)
-},{"./crypto/bn":6,"./crypto/hash":8,"./crypto/point":9,"./crypto/random":10,"./encoding/base58":12,"./encoding/base58check":13,"./errors":17,"./hdpublickey":23,"./networks":25,"./privatekey":27,"./util/buffer":46,"./util/js":47,"./util/preconditions":48,"assert":64,"buffer":118,"l*o*d*a*s*h":192}],23:[function(require,module,exports){
+},{"./crypto/bn":6,"./crypto/hash":8,"./crypto/point":9,"./crypto/random":10,"./encoding/base58":12,"./encoding/base58check":13,"./errors":17,"./hdpublickey":23,"./networks":25,"./privatekey":27,"./util/buffer":46,"./util/js":47,"./util/preconditions":48,"assert":64,"buffer":118,"lodash":192}],23:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var $ = require('./util/preconditions');
 
 var BN = require('./crypto/bn');
@@ -4911,11 +4911,11 @@ assert(HDPublicKey.ChecksumEnd === HDPublicKey.SerializedByteSize);
 module.exports = HDPublicKey;
 
 }).call(this,require("buffer").Buffer)
-},{"./crypto/bn":6,"./crypto/hash":8,"./crypto/point":9,"./encoding/base58":12,"./encoding/base58check":13,"./errors":17,"./hdprivatekey":22,"./networks":25,"./publickey":28,"./util/buffer":46,"./util/js":47,"./util/preconditions":48,"assert":64,"buffer":118,"l*o*d*a*s*h":192}],24:[function(require,module,exports){
+},{"./crypto/bn":6,"./crypto/hash":8,"./crypto/point":9,"./encoding/base58":12,"./encoding/base58check":13,"./errors":17,"./hdprivatekey":22,"./networks":25,"./publickey":28,"./util/buffer":46,"./util/js":47,"./util/preconditions":48,"assert":64,"buffer":118,"lodash":192}],24:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var PrivateKey = require('./privatekey');
 var PublicKey = require('./publickey');
 var Address = require('./address');
@@ -5083,9 +5083,9 @@ Message.prototype.inspect = function() {
 module.exports = Message;
 
 }).call(this,require("buffer").Buffer)
-},{"./address":1,"./crypto/ecdsa":7,"./crypto/hash":8,"./crypto/signature":11,"./encoding/bufferwriter":15,"./privatekey":27,"./publickey":28,"./util/js":47,"./util/preconditions":48,"buffer":118,"l*o*d*a*s*h":192}],25:[function(require,module,exports){
+},{"./address":1,"./crypto/ecdsa":7,"./crypto/hash":8,"./crypto/signature":11,"./encoding/bufferwriter":15,"./privatekey":27,"./publickey":28,"./util/js":47,"./util/preconditions":48,"buffer":118,"lodash":192}],25:[function(require,module,exports){
 'use strict';
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 
 var BufferUtil = require('./util/buffer');
 var JSUtil = require('./util/js');
@@ -5351,11 +5351,11 @@ module.exports = {
   disableRegtest: disableRegtest
 };
 
-},{"./util/buffer":46,"./util/js":47,"l*o*d*a*s*h":192}],26:[function(require,module,exports){
+},{"./util/buffer":46,"./util/js":47,"lodash":192}],26:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var $ = require('./util/preconditions');
 var BufferUtil = require('./util/buffer');
 var JSUtil = require('./util/js');
@@ -5603,11 +5603,11 @@ Opcode.prototype.inspect = function() {
 module.exports = Opcode;
 
 }).call(this,require("buffer").Buffer)
-},{"./util/buffer":46,"./util/js":47,"./util/preconditions":48,"buffer":118,"l*o*d*a*s*h":192}],27:[function(require,module,exports){
+},{"./util/buffer":46,"./util/js":47,"./util/preconditions":48,"buffer":118,"lodash":192}],27:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var Address = require('./address');
 var Base58Check = require('./encoding/base58check');
 var BN = require('./crypto/bn');
@@ -6007,7 +6007,7 @@ PrivateKey.prototype.inspect = function() {
 module.exports = PrivateKey;
 
 }).call(this,require("buffer").Buffer)
-},{"./address":1,"./crypto/bn":6,"./crypto/point":9,"./crypto/random":10,"./encoding/base58check":13,"./networks":25,"./publickey":28,"./util/js":47,"./util/preconditions":48,"buffer":118,"l*o*d*a*s*h":192}],28:[function(require,module,exports){
+},{"./address":1,"./crypto/bn":6,"./crypto/point":9,"./crypto/random":10,"./encoding/base58check":13,"./networks":25,"./publickey":28,"./util/js":47,"./util/preconditions":48,"buffer":118,"lodash":192}],28:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -6016,7 +6016,7 @@ var Point = require('./crypto/point');
 var Hash = require('./crypto/hash');
 var JSUtil = require('./util/js');
 var Network = require('./networks');
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var $ = require('./util/preconditions');
 
 /**
@@ -6404,7 +6404,7 @@ PublicKey.prototype.inspect = function() {
 module.exports = PublicKey;
 
 }).call(this,require("buffer").Buffer)
-},{"./address":1,"./crypto/bn":6,"./crypto/hash":8,"./crypto/point":9,"./networks":25,"./privatekey":27,"./util/js":47,"./util/preconditions":48,"buffer":118,"l*o*d*a*s*h":192}],29:[function(require,module,exports){
+},{"./address":1,"./crypto/bn":6,"./crypto/hash":8,"./crypto/point":9,"./networks":25,"./privatekey":27,"./util/js":47,"./util/preconditions":48,"buffer":118,"lodash":192}],29:[function(require,module,exports){
 module.exports = require('./script');
 
 module.exports.Interpreter = require('./interpreter');
@@ -6413,7 +6413,7 @@ module.exports.Interpreter = require('./interpreter');
 (function (Buffer){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 
 var Script = require('./script');
 var Opcode = require('../opcode');
@@ -7678,7 +7678,7 @@ Interpreter.prototype.step = function() {
 
 
 }).call(this,require("buffer").Buffer)
-},{"../crypto/bn":6,"../crypto/hash":8,"../crypto/signature":11,"../opcode":26,"../publickey":28,"../transaction":32,"./script":31,"buffer":118,"l*o*d*a*s*h":192}],31:[function(require,module,exports){
+},{"../crypto/bn":6,"../crypto/hash":8,"../crypto/signature":11,"../opcode":26,"../publickey":28,"../transaction":32,"./script":31,"buffer":118,"lodash":192}],31:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -7691,7 +7691,7 @@ var PublicKey = require('../publickey');
 var Signature = require('../crypto/signature');
 var Networks = require('../networks');
 var $ = require('../util/preconditions');
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var errors = require('../errors');
 var buffer = require('buffer');
 var BufferUtil = require('../util/buffer');
@@ -8766,7 +8766,7 @@ Script.prototype.getSignatureOperationsCount = function(accurate) {
 module.exports = Script;
 
 }).call(this,require("buffer").Buffer)
-},{"../address":1,"../crypto/hash":8,"../crypto/signature":11,"../encoding/bufferreader":14,"../encoding/bufferwriter":15,"../errors":17,"../networks":25,"../opcode":26,"../publickey":28,"../util/buffer":46,"../util/js":47,"../util/preconditions":48,"buffer":118,"l*o*d*a*s*h":192}],32:[function(require,module,exports){
+},{"../address":1,"../crypto/hash":8,"../crypto/signature":11,"../encoding/bufferreader":14,"../encoding/bufferwriter":15,"../errors":17,"../networks":25,"../opcode":26,"../publickey":28,"../util/buffer":46,"../util/js":47,"../util/preconditions":48,"buffer":118,"lodash":192}],32:[function(require,module,exports){
 module.exports = require('./transaction');
 
 module.exports.Input = require('./input');
@@ -8786,7 +8786,7 @@ module.exports.MultiSigScriptHash = require('./multisigscripthash.js');
 },{"./input":34,"./multisig.js":35,"./multisigscripthash.js":36,"./publickey":37,"./publickeyhash":38}],34:[function(require,module,exports){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var $ = require('../../util/preconditions');
 var errors = require('../../errors');
 var BufferWriter = require('../../encoding/bufferwriter');
@@ -8981,10 +8981,10 @@ Input.prototype._estimateSize = function() {
 
 module.exports = Input;
 
-},{"../../encoding/bufferwriter":15,"../../errors":17,"../../script":29,"../../util/buffer":46,"../../util/js":47,"../../util/preconditions":48,"../output":39,"../sighash":40,"buffer":118,"l*o*d*a*s*h":192}],35:[function(require,module,exports){
+},{"../../encoding/bufferwriter":15,"../../errors":17,"../../script":29,"../../util/buffer":46,"../../util/js":47,"../../util/preconditions":48,"../output":39,"../sighash":40,"buffer":118,"lodash":192}],35:[function(require,module,exports){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var inherits = require('inherits');
 var Transaction = require('../transaction');
 var Input = require('./input');
@@ -9194,10 +9194,10 @@ MultiSigInput.prototype._estimateSize = function() {
 
 module.exports = MultiSigInput;
 
-},{"../../crypto/signature":11,"../../publickey":28,"../../script":29,"../../util/buffer":46,"../../util/preconditions":48,"../output":39,"../sighash":40,"../signature":41,"../transaction":42,"./input":34,"inherits":189,"l*o*d*a*s*h":192}],36:[function(require,module,exports){
+},{"../../crypto/signature":11,"../../publickey":28,"../../script":29,"../../util/buffer":46,"../../util/preconditions":48,"../output":39,"../sighash":40,"../signature":41,"../transaction":42,"./input":34,"inherits":189,"lodash":192}],36:[function(require,module,exports){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var inherits = require('inherits');
 var Input = require('./input');
 var Output = require('../output');
@@ -9362,7 +9362,7 @@ MultiSigScriptHashInput.prototype._estimateSize = function() {
 
 module.exports = MultiSigScriptHashInput;
 
-},{"../../crypto/signature":11,"../../publickey":28,"../../script":29,"../../util/buffer":46,"../../util/preconditions":48,"../output":39,"../sighash":40,"../signature":41,"./input":34,"inherits":189,"l*o*d*a*s*h":192}],37:[function(require,module,exports){
+},{"../../crypto/signature":11,"../../publickey":28,"../../script":29,"../../util/buffer":46,"../../util/preconditions":48,"../output":39,"../sighash":40,"../signature":41,"./input":34,"inherits":189,"lodash":192}],37:[function(require,module,exports){
 'use strict';
 
 var inherits = require('inherits');
@@ -9553,7 +9553,7 @@ module.exports = PublicKeyHashInput;
 },{"../../crypto/hash":8,"../../crypto/signature":11,"../../script":29,"../../util/buffer":46,"../../util/preconditions":48,"../output":39,"../sighash":40,"../signature":41,"./input":34,"inherits":189}],39:[function(require,module,exports){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var BN = require('../crypto/bn');
 var buffer = require('buffer');
 var bufferUtil = require('../util/buffer');
@@ -9720,7 +9720,7 @@ Output.prototype.toBufferWriter = function(writer) {
 
 module.exports = Output;
 
-},{"../crypto/bn":6,"../encoding/bufferwriter":15,"../errors":17,"../script":29,"../util/buffer":46,"../util/js":47,"../util/preconditions":48,"buffer":118,"l*o*d*a*s*h":192}],40:[function(require,module,exports){
+},{"../crypto/bn":6,"../encoding/bufferwriter":15,"../errors":17,"../script":29,"../util/buffer":46,"../util/js":47,"../util/preconditions":48,"buffer":118,"lodash":192}],40:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -9735,7 +9735,7 @@ var BN = require('../crypto/bn');
 var Hash = require('../crypto/hash');
 var ECDSA = require('../crypto/ecdsa');
 var $ = require('../util/preconditions');
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 
 var SIGHASH_SINGLE_BUG = '0000000000000000000000000000000000000000000000000000000000000001';
 var BITS_64_ON = 'ffffffffffffffff';
@@ -9860,11 +9860,11 @@ module.exports = {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"../crypto/bn":6,"../crypto/ecdsa":7,"../crypto/hash":8,"../crypto/signature":11,"../encoding/bufferreader":14,"../encoding/bufferwriter":15,"../script":29,"../util/preconditions":48,"./input":33,"./output":39,"./transaction":42,"buffer":118,"l*o*d*a*s*h":192}],41:[function(require,module,exports){
+},{"../crypto/bn":6,"../crypto/ecdsa":7,"../crypto/hash":8,"../crypto/signature":11,"../encoding/bufferreader":14,"../encoding/bufferwriter":15,"../script":29,"../util/preconditions":48,"./input":33,"./output":39,"./transaction":42,"buffer":118,"lodash":192}],41:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var $ = require('../util/preconditions');
 var inherits = require('inherits');
 var BufferUtil = require('../util/buffer');
@@ -9953,11 +9953,11 @@ TransactionSignature.fromObject = function(object) {
 module.exports = TransactionSignature;
 
 }).call(this,require("buffer").Buffer)
-},{"../crypto/signature":11,"../errors":17,"../publickey":28,"../util/buffer":46,"../util/js":47,"../util/preconditions":48,"buffer":118,"inherits":189,"l*o*d*a*s*h":192}],42:[function(require,module,exports){
+},{"../crypto/signature":11,"../errors":17,"../publickey":28,"../util/buffer":46,"../util/js":47,"../util/preconditions":48,"buffer":118,"inherits":189,"lodash":192}],42:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var $ = require('../util/preconditions');
 var buffer = require('buffer');
 var compare = Buffer.compare || require('buffer-compare');
@@ -10924,7 +10924,7 @@ Transaction.prototype.sort = function() {
 
 /**
  * Randomize this transaction's outputs ordering. The shuffling algorithm is a
- * version of the Fisher-Yates shuffle, provided by l*o*d*a*s*h's _.shuffle().
+ * version of the Fisher-Yates shuffle, provided by lodash's _.shuffle().
  *
  * @return {Transaction} this
  */
@@ -11187,10 +11187,10 @@ Transaction.prototype.enableRBF = function() {
 module.exports = Transaction;
 
 }).call(this,require("buffer").Buffer)
-},{"../address":1,"../crypto/bn":6,"../crypto/hash":8,"../crypto/signature":11,"../encoding/bufferreader":14,"../encoding/bufferwriter":15,"../errors":17,"../privatekey":27,"../script":29,"../util/buffer":46,"../util/js":47,"../util/preconditions":48,"./input":33,"./output":39,"./sighash":40,"./unspentoutput":43,"buffer":118,"buffer-compare":116,"l*o*d*a*s*h":192}],43:[function(require,module,exports){
+},{"../address":1,"../crypto/bn":6,"../crypto/hash":8,"../crypto/signature":11,"../encoding/bufferreader":14,"../encoding/bufferwriter":15,"../errors":17,"../privatekey":27,"../script":29,"../util/buffer":46,"../util/js":47,"../util/preconditions":48,"./input":33,"./output":39,"./sighash":40,"./unspentoutput":43,"buffer":118,"buffer-compare":116,"lodash":192}],43:[function(require,module,exports){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var $ = require('../util/preconditions');
 var JSUtil = require('../util/js');
 
@@ -11289,10 +11289,10 @@ UnspentOutput.prototype.toObject = UnspentOutput.prototype.toJSON = function toO
 
 module.exports = UnspentOutput;
 
-},{"../address":1,"../script":29,"../unit":44,"../util/js":47,"../util/preconditions":48,"l*o*d*a*s*h":192}],44:[function(require,module,exports){
+},{"../address":1,"../script":29,"../unit":44,"../util/js":47,"../util/preconditions":48,"lodash":192}],44:[function(require,module,exports){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 
 var errors = require('./errors');
 var $ = require('./util/preconditions');
@@ -11529,10 +11529,10 @@ Unit.prototype.inspect = function() {
 
 module.exports = Unit;
 
-},{"./errors":17,"./util/preconditions":48,"l*o*d*a*s*h":192}],45:[function(require,module,exports){
+},{"./errors":17,"./util/preconditions":48,"lodash":192}],45:[function(require,module,exports){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var URL = require('url');
 
 var Address = require('./address');
@@ -11754,7 +11754,7 @@ URI.prototype.inspect = function() {
 
 module.exports = URI;
 
-},{"./address":1,"./unit":44,"l*o*d*a*s*h":192,"url":256}],46:[function(require,module,exports){
+},{"./address":1,"./unit":44,"lodash":192,"url":256}],46:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -11938,7 +11938,7 @@ module.exports.EMPTY_BUFFER = new Buffer(0);
 },{"./js":47,"./preconditions":48,"assert":64,"buffer":118}],47:[function(require,module,exports){
 'use strict';
 
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 
 /**
  * Determines whether a string contains only hexadecimal values
@@ -12021,11 +12021,11 @@ module.exports = {
   }
 };
 
-},{"l*o*d*a*s*h":192}],48:[function(require,module,exports){
+},{"lodash":192}],48:[function(require,module,exports){
 'use strict';
 
 var errors = require('../errors');
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 
 module.exports = {
   checkState: function(condition, message) {
@@ -12057,7 +12057,7 @@ module.exports = {
   }
 };
 
-},{"../errors":17,"buffer":118,"l*o*d*a*s*h":192}],49:[function(require,module,exports){
+},{"../errors":17,"buffer":118,"lodash":192}],49:[function(require,module,exports){
 var asn1 = exports;
 
 asn1.bignum = require('bn.js');
@@ -34622,9 +34622,9 @@ module.exports = Array.isArray || function (arr) {
 (function (global){
 /**
  * @license
- * L*o*d*a*s*h <https://l*o*d*a*s*h.com/>
+ * Lodash <https://lodash.com/>
  * Copyright JS Foundation and other contributors <https://js.foundation/>
- * Released under MIT license <https://l*o*d*a*s*h.com/license>
+ * Released under MIT license <https://lodash.com/license>
  * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
  * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  */
@@ -34644,13 +34644,13 @@ module.exports = Array.isArray || function (arr) {
       FUNC_ERROR_TEXT = 'Expected a function';
 
   /** Used to stand-in for `undefined` hash values. */
-  var HASH_UNDEFINED = '__l*o*d*a*s*h_hash_undefined__';
+  var HASH_UNDEFINED = '__lodash_hash_undefined__';
 
   /** Used as the maximum memoize cache size. */
   var MAX_MEMOIZE_SIZE = 500;
 
   /** Used as the internal argument placeholder. */
-  var PLACEHOLDER = '__l*o*d*a*s*h_placeholder__';
+  var PLACEHOLDER = '__lodash_placeholder__';
 
   /** Used to compose bitmasks for cloning. */
   var CLONE_DEEP_FLAG = 1,
@@ -36018,29 +36018,29 @@ module.exports = Array.isArray || function (arr) {
   /*--------------------------------------------------------------------------*/
 
   /**
-   * Create a new pristine `l*o*d*a*s*h` function using the `context` object.
+   * Create a new pristine `lodash` function using the `context` object.
    *
    * @static
    * @memberOf _
    * @since 1.1.0
    * @category Util
    * @param {Object} [context=root] The context object.
-   * @returns {Function} Returns a new `l*o*d*a*s*h` function.
+   * @returns {Function} Returns a new `lodash` function.
    * @example
    *
    * _.mixin({ 'foo': _.constant('foo') });
    *
-   * var l*o*d*a*s*h = _.runInContext();
-   * l*o*d*a*s*h.mixin({ 'bar': l*o*d*a*s*h.constant('bar') });
+   * var lodash = _.runInContext();
+   * lodash.mixin({ 'bar': lodash.constant('bar') });
    *
    * _.isFunction(_.foo);
    * // => true
    * _.isFunction(_.bar);
    * // => false
    *
-   * l*o*d*a*s*h.isFunction(l*o*d*a*s*h.foo);
+   * lodash.isFunction(lodash.foo);
    * // => false
-   * l*o*d*a*s*h.isFunction(l*o*d*a*s*h.bar);
+   * lodash.isFunction(lodash.bar);
    * // => true
    *
    * // Create a suped-up `defer` in Node.js.
@@ -36128,7 +36128,7 @@ module.exports = Array.isArray || function (arr) {
         ctxNow = Date && Date.now !== root.Date.now && Date.now,
         ctxSetTimeout = context.setTimeout !== root.setTimeout && context.setTimeout;
 
-    /* Built-in method references for those with the same name as other `l*o*d*a*s*h` methods. */
+    /* Built-in method references for those with the same name as other `lodash` methods. */
     var nativeCeil = Math.ceil,
         nativeFloor = Math.floor,
         nativeGetSymbols = Object.getOwnPropertySymbols,
@@ -36172,7 +36172,7 @@ module.exports = Array.isArray || function (arr) {
     /*------------------------------------------------------------------------*/
 
     /**
-     * Creates a `l*o*d*a*s*h` object which wraps `value` to enable implicit method
+     * Creates a `lodash` object which wraps `value` to enable implicit method
      * chain sequences. Methods that operate on and return arrays, collections,
      * and functions can be chained together. Methods that retrieve a single value
      * or may return a primitive value will automatically end the chain sequence
@@ -36196,7 +36196,7 @@ module.exports = Array.isArray || function (arr) {
      * Chaining is supported in custom builds as long as the `_#value` method is
      * directly or indirectly included in the build.
      *
-     * In addition to l*o*d*a*s*h methods, wrappers have `Array` and `String` methods.
+     * In addition to lodash methods, wrappers have `Array` and `String` methods.
      *
      * The wrapper `Array` methods are:
      * `concat`, `join`, `pop`, `push`, `shift`, `sort`, `splice`, and `unshift`
@@ -36265,8 +36265,8 @@ module.exports = Array.isArray || function (arr) {
      * @name _
      * @constructor
      * @category Seq
-     * @param {*} value The value to wrap in a `l*o*d*a*s*h` instance.
-     * @returns {Object} Returns the new `l*o*d*a*s*h` wrapper instance.
+     * @param {*} value The value to wrap in a `lodash` instance.
+     * @returns {Object} Returns the new `lodash` wrapper instance.
      * @example
      *
      * function square(n) {
@@ -36288,16 +36288,16 @@ module.exports = Array.isArray || function (arr) {
      * _.isArray(squares.value());
      * // => true
      */
-    function l*o*d*a*s*h(value) {
+    function lodash(value) {
       if (isObjectLike(value) && !isArray(value) && !(value instanceof LazyWrapper)) {
-        if (value instanceof L*o*d*a*s*hWrapper) {
+        if (value instanceof LodashWrapper) {
           return value;
         }
         if (hasOwnProperty.call(value, '__wrapped__')) {
           return wrapperClone(value);
         }
       }
-      return new L*o*d*a*s*hWrapper(value);
+      return new LodashWrapper(value);
     }
 
     /**
@@ -36329,18 +36329,18 @@ module.exports = Array.isArray || function (arr) {
      *
      * @private
      */
-    function baseL*o*d*a*s*h() {
+    function baseLodash() {
       // No operation performed.
     }
 
     /**
-     * The base constructor for creating `l*o*d*a*s*h` wrapper objects.
+     * The base constructor for creating `lodash` wrapper objects.
      *
      * @private
      * @param {*} value The value to wrap.
      * @param {boolean} [chainAll] Enable explicit method chain sequences.
      */
-    function L*o*d*a*s*hWrapper(value, chainAll) {
+    function LodashWrapper(value, chainAll) {
       this.__wrapped__ = value;
       this.__actions__ = [];
       this.__chain__ = !!chainAll;
@@ -36349,7 +36349,7 @@ module.exports = Array.isArray || function (arr) {
     }
 
     /**
-     * By default, the template delimiters used by l*o*d*a*s*h are like those in
+     * By default, the template delimiters used by lodash are like those in
      * embedded Ruby (ERB). Change the following template settings to use
      * alternative delimiters.
      *
@@ -36357,7 +36357,7 @@ module.exports = Array.isArray || function (arr) {
      * @memberOf _
      * @type {Object}
      */
-    l*o*d*a*s*h.templateSettings = {
+    lodash.templateSettings = {
 
       /**
        * Used to detect `data` property values to be HTML-escaped.
@@ -36400,21 +36400,21 @@ module.exports = Array.isArray || function (arr) {
       'imports': {
 
         /**
-         * A reference to the `l*o*d*a*s*h` function.
+         * A reference to the `lodash` function.
          *
          * @memberOf _.templateSettings.imports
          * @type {Function}
          */
-        '_': l*o*d*a*s*h
+        '_': lodash
       }
     };
 
-    // Ensure wrappers are instances of `baseL*o*d*a*s*h`.
-    l*o*d*a*s*h.prototype = baseL*o*d*a*s*h.prototype;
-    l*o*d*a*s*h.prototype.constructor = l*o*d*a*s*h;
+    // Ensure wrappers are instances of `baseLodash`.
+    lodash.prototype = baseLodash.prototype;
+    lodash.prototype.constructor = lodash;
 
-    L*o*d*a*s*hWrapper.prototype = baseCreate(baseL*o*d*a*s*h.prototype);
-    L*o*d*a*s*hWrapper.prototype.constructor = L*o*d*a*s*hWrapper;
+    LodashWrapper.prototype = baseCreate(baseLodash.prototype);
+    LodashWrapper.prototype.constructor = LodashWrapper;
 
     /*------------------------------------------------------------------------*/
 
@@ -36532,8 +36532,8 @@ module.exports = Array.isArray || function (arr) {
       return result;
     }
 
-    // Ensure `LazyWrapper` is an instance of `baseL*o*d*a*s*h`.
-    LazyWrapper.prototype = baseCreate(baseL*o*d*a*s*h.prototype);
+    // Ensure `LazyWrapper` is an instance of `baseLodash`.
+    LazyWrapper.prototype = baseCreate(baseLodash.prototype);
     LazyWrapper.prototype.constructor = LazyWrapper;
 
     /*------------------------------------------------------------------------*/
@@ -39766,7 +39766,7 @@ module.exports = Array.isArray || function (arr) {
       return flatRest(function(funcs) {
         var length = funcs.length,
             index = length,
-            prereq = L*o*d*a*s*hWrapper.prototype.thru;
+            prereq = LodashWrapper.prototype.thru;
 
         if (fromRight) {
           funcs.reverse();
@@ -39777,7 +39777,7 @@ module.exports = Array.isArray || function (arr) {
             throw new TypeError(FUNC_ERROR_TEXT);
           }
           if (prereq && !wrapper && getFuncName(func) == 'wrapper') {
-            var wrapper = new L*o*d*a*s*hWrapper([], true);
+            var wrapper = new LodashWrapper([], true);
           }
         }
         index = wrapper ? index : length;
@@ -40543,7 +40543,7 @@ module.exports = Array.isArray || function (arr) {
      * @returns {*} Returns the placeholder value.
      */
     function getHolder(func) {
-      var object = hasOwnProperty.call(l*o*d*a*s*h, 'placeholder') ? l*o*d*a*s*h : func;
+      var object = hasOwnProperty.call(lodash, 'placeholder') ? lodash : func;
       return object.placeholder;
     }
 
@@ -40559,7 +40559,7 @@ module.exports = Array.isArray || function (arr) {
      * @returns {Function} Returns the chosen function or its result.
      */
     function getIteratee() {
-      var result = l*o*d*a*s*h.iteratee || iteratee;
+      var result = lodash.iteratee || iteratee;
       result = result === iteratee ? baseIteratee : result;
       return arguments.length ? result(arguments[0], arguments[1]) : result;
     }
@@ -40964,7 +40964,7 @@ module.exports = Array.isArray || function (arr) {
      */
     function isLaziable(func) {
       var funcName = getFuncName(func),
-          other = l*o*d*a*s*h[funcName];
+          other = lodash[funcName];
 
       if (typeof other != 'function' || !(funcName in LazyWrapper.prototype)) {
         return false;
@@ -41437,7 +41437,7 @@ module.exports = Array.isArray || function (arr) {
       if (wrapper instanceof LazyWrapper) {
         return wrapper.clone();
       }
-      var result = new L*o*d*a*s*hWrapper(wrapper.__wrapped__, wrapper.__chain__);
+      var result = new LodashWrapper(wrapper.__wrapped__, wrapper.__chain__);
       result.__actions__ = copyArray(wrapper.__actions__);
       result.__index__  = wrapper.__index__;
       result.__values__ = wrapper.__values__;
@@ -43337,7 +43337,7 @@ module.exports = Array.isArray || function (arr) {
     /*------------------------------------------------------------------------*/
 
     /**
-     * Creates a `l*o*d*a*s*h` wrapper instance that wraps `value` with explicit method
+     * Creates a `lodash` wrapper instance that wraps `value` with explicit method
      * chain sequences enabled. The result of such sequences must be unwrapped
      * with `_#value`.
      *
@@ -43346,7 +43346,7 @@ module.exports = Array.isArray || function (arr) {
      * @since 1.3.0
      * @category Seq
      * @param {*} value The value to wrap.
-     * @returns {Object} Returns the new `l*o*d*a*s*h` wrapper instance.
+     * @returns {Object} Returns the new `lodash` wrapper instance.
      * @example
      *
      * var users = [
@@ -43366,7 +43366,7 @@ module.exports = Array.isArray || function (arr) {
      * // => 'pebbles is 1'
      */
     function chain(value) {
-      var result = l*o*d*a*s*h(value);
+      var result = lodash(value);
       result.__chain__ = true;
       return result;
     }
@@ -43434,7 +43434,7 @@ module.exports = Array.isArray || function (arr) {
      * @since 1.0.0
      * @category Seq
      * @param {...(string|string[])} [paths] The property paths to pick.
-     * @returns {Object} Returns the new `l*o*d*a*s*h` wrapper instance.
+     * @returns {Object} Returns the new `lodash` wrapper instance.
      * @example
      *
      * var object = { 'a': [{ 'b': { 'c': 3 } }, 4] };
@@ -43458,7 +43458,7 @@ module.exports = Array.isArray || function (arr) {
         'args': [interceptor],
         'thisArg': undefined
       });
-      return new L*o*d*a*s*hWrapper(value, this.__chain__).thru(function(array) {
+      return new LodashWrapper(value, this.__chain__).thru(function(array) {
         if (length && !array.length) {
           array.push(undefined);
         }
@@ -43467,13 +43467,13 @@ module.exports = Array.isArray || function (arr) {
     });
 
     /**
-     * Creates a `l*o*d*a*s*h` wrapper instance with explicit method chain sequences enabled.
+     * Creates a `lodash` wrapper instance with explicit method chain sequences enabled.
      *
      * @name chain
      * @memberOf _
      * @since 0.1.0
      * @category Seq
-     * @returns {Object} Returns the new `l*o*d*a*s*h` wrapper instance.
+     * @returns {Object} Returns the new `lodash` wrapper instance.
      * @example
      *
      * var users = [
@@ -43504,7 +43504,7 @@ module.exports = Array.isArray || function (arr) {
      * @memberOf _
      * @since 3.2.0
      * @category Seq
-     * @returns {Object} Returns the new `l*o*d*a*s*h` wrapper instance.
+     * @returns {Object} Returns the new `lodash` wrapper instance.
      * @example
      *
      * var array = [1, 2];
@@ -43524,7 +43524,7 @@ module.exports = Array.isArray || function (arr) {
      * // => [1, 2, 3]
      */
     function wrapperCommit() {
-      return new L*o*d*a*s*hWrapper(this.value(), this.__chain__);
+      return new LodashWrapper(this.value(), this.__chain__);
     }
 
     /**
@@ -43589,7 +43589,7 @@ module.exports = Array.isArray || function (arr) {
      * @since 3.2.0
      * @category Seq
      * @param {*} value The value to plant.
-     * @returns {Object} Returns the new `l*o*d*a*s*h` wrapper instance.
+     * @returns {Object} Returns the new `lodash` wrapper instance.
      * @example
      *
      * function square(n) {
@@ -43609,7 +43609,7 @@ module.exports = Array.isArray || function (arr) {
       var result,
           parent = this;
 
-      while (parent instanceof baseL*o*d*a*s*h) {
+      while (parent instanceof baseLodash) {
         var clone = wrapperClone(parent);
         clone.__index__ = 0;
         clone.__values__ = undefined;
@@ -43634,7 +43634,7 @@ module.exports = Array.isArray || function (arr) {
      * @memberOf _
      * @since 0.1.0
      * @category Seq
-     * @returns {Object} Returns the new `l*o*d*a*s*h` wrapper instance.
+     * @returns {Object} Returns the new `lodash` wrapper instance.
      * @example
      *
      * var array = [1, 2, 3];
@@ -43658,7 +43658,7 @@ module.exports = Array.isArray || function (arr) {
           'args': [reverse],
           'thisArg': undefined
         });
-        return new L*o*d*a*s*hWrapper(wrapped, this.__chain__);
+        return new LodashWrapper(wrapped, this.__chain__);
       }
       return this.thru(reverse);
     }
@@ -44143,7 +44143,7 @@ module.exports = Array.isArray || function (arr) {
      * `iteratee`. The iteratee is invoked with three arguments:
      * (value, index|key, collection).
      *
-     * Many l*o*d*a*s*h methods are guarded to work as iteratees for methods like
+     * Many lodash methods are guarded to work as iteratees for methods like
      * `_.every`, `_.filter`, `_.map`, `_.mapValues`, `_.reject`, and `_.some`.
      *
      * The guarded methods are:
@@ -44276,7 +44276,7 @@ module.exports = Array.isArray || function (arr) {
      * value. The iteratee is invoked with four arguments:
      * (accumulator, value, index|key, collection).
      *
-     * Many l*o*d*a*s*h methods are guarded to work as iteratees for methods like
+     * Many lodash methods are guarded to work as iteratees for methods like
      * `_.reduce`, `_.reduceRight`, and `_.transform`.
      *
      * The guarded methods are:
@@ -48861,8 +48861,8 @@ module.exports = Array.isArray || function (arr) {
      * @returns {string} Returns the escaped string.
      * @example
      *
-     * _.escapeRegExp('[l*o*d*a*s*h](https://l*o*d*a*s*h.com/)');
-     * // => '\[l*o*d*a*s*h\]\(https://l*o*d*a*s*h\.com/\)'
+     * _.escapeRegExp('[lodash](https://lodash.com/)');
+     * // => '\[lodash\]\(https://lodash\.com/\)'
      */
     function escapeRegExp(string) {
       string = toString(string);
@@ -49266,7 +49266,7 @@ module.exports = Array.isArray || function (arr) {
      * for easier debugging.
      *
      * For more information on precompiling templates see
-     * [l*o*d*a*s*h's custom builds documentation](https://l*o*d*a*s*h.com/custom-builds).
+     * [lodash's custom builds documentation](https://lodash.com/custom-builds).
      *
      * For more information on Chrome extension sandboxes see
      * [Chrome's extensions documentation](https://developer.chrome.com/extensions/sandboxingEval).
@@ -49285,7 +49285,7 @@ module.exports = Array.isArray || function (arr) {
      *  An object to import into the template as free variables.
      * @param {RegExp} [options.interpolate=_.templateSettings.interpolate]
      *  The "interpolate" delimiter.
-     * @param {string} [options.sourceURL='l*o*d*a*s*h.templateSources[n]']
+     * @param {string} [options.sourceURL='lodash.templateSources[n]']
      *  The sourceURL of the compiled template.
      * @param {string} [options.variable='obj']
      *  The data object variable name.
@@ -49362,7 +49362,7 @@ module.exports = Array.isArray || function (arr) {
       // Based on John Resig's `tmpl` implementation
       // (http://ejohn.org/blog/javascript-micro-templating/)
       // and Laura Doktorova's doT.js (https://github.com/olado/doT).
-      var settings = l*o*d*a*s*h.templateSettings;
+      var settings = lodash.templateSettings;
 
       if (guard && isIterateeCall(string, options, guard)) {
         options = undefined;
@@ -49392,7 +49392,7 @@ module.exports = Array.isArray || function (arr) {
       var sourceURL = '//# sourceURL=' +
         ('sourceURL' in options
           ? options.sourceURL
-          : ('l*o*d*a*s*h.templateSources[' + (++templateCounter) + ']')
+          : ('lodash.templateSources[' + (++templateCounter) + ']')
         ) + '\n';
 
       string.replace(reDelimiters, function(match, escapeValue, interpolateValue, esTemplateValue, evaluateValue, offset) {
@@ -50244,14 +50244,14 @@ module.exports = Array.isArray || function (arr) {
      * object to the destination object. If `object` is a function, then methods
      * are added to its prototype as well.
      *
-     * **Note:** Use `_.runInContext` to create a pristine `l*o*d*a*s*h` function to
+     * **Note:** Use `_.runInContext` to create a pristine `lodash` function to
      * avoid conflicts caused by modifying the original.
      *
      * @static
      * @since 0.1.0
      * @memberOf _
      * @category Util
-     * @param {Function|Object} [object=l*o*d*a*s*h] The destination object.
+     * @param {Function|Object} [object=lodash] The destination object.
      * @param {Object} source The object of functions to add.
      * @param {Object} [options={}] The options object.
      * @param {boolean} [options.chain=true] Specify whether mixins are chainable.
@@ -50313,16 +50313,16 @@ module.exports = Array.isArray || function (arr) {
 
     /**
      * Reverts the `_` variable to its previous value and returns a reference to
-     * the `l*o*d*a*s*h` function.
+     * the `lodash` function.
      *
      * @static
      * @since 0.1.0
      * @memberOf _
      * @category Util
-     * @returns {Function} Returns the `l*o*d*a*s*h` function.
+     * @returns {Function} Returns the `lodash` function.
      * @example
      *
-     * var l*o*d*a*s*h = _.noConflict();
+     * var lodash = _.noConflict();
      */
     function noConflict() {
       if (root._ === this) {
@@ -51108,327 +51108,327 @@ module.exports = Array.isArray || function (arr) {
     /*------------------------------------------------------------------------*/
 
     // Add methods that return wrapped values in chain sequences.
-    l*o*d*a*s*h.after = after;
-    l*o*d*a*s*h.ary = ary;
-    l*o*d*a*s*h.assign = assign;
-    l*o*d*a*s*h.assignIn = assignIn;
-    l*o*d*a*s*h.assignInWith = assignInWith;
-    l*o*d*a*s*h.assignWith = assignWith;
-    l*o*d*a*s*h.at = at;
-    l*o*d*a*s*h.before = before;
-    l*o*d*a*s*h.bind = bind;
-    l*o*d*a*s*h.bindAll = bindAll;
-    l*o*d*a*s*h.bindKey = bindKey;
-    l*o*d*a*s*h.castArray = castArray;
-    l*o*d*a*s*h.chain = chain;
-    l*o*d*a*s*h.chunk = chunk;
-    l*o*d*a*s*h.compact = compact;
-    l*o*d*a*s*h.concat = concat;
-    l*o*d*a*s*h.cond = cond;
-    l*o*d*a*s*h.conforms = conforms;
-    l*o*d*a*s*h.constant = constant;
-    l*o*d*a*s*h.countBy = countBy;
-    l*o*d*a*s*h.create = create;
-    l*o*d*a*s*h.curry = curry;
-    l*o*d*a*s*h.curryRight = curryRight;
-    l*o*d*a*s*h.debounce = debounce;
-    l*o*d*a*s*h.defaults = defaults;
-    l*o*d*a*s*h.defaultsDeep = defaultsDeep;
-    l*o*d*a*s*h.defer = defer;
-    l*o*d*a*s*h.delay = delay;
-    l*o*d*a*s*h.difference = difference;
-    l*o*d*a*s*h.differenceBy = differenceBy;
-    l*o*d*a*s*h.differenceWith = differenceWith;
-    l*o*d*a*s*h.drop = drop;
-    l*o*d*a*s*h.dropRight = dropRight;
-    l*o*d*a*s*h.dropRightWhile = dropRightWhile;
-    l*o*d*a*s*h.dropWhile = dropWhile;
-    l*o*d*a*s*h.fill = fill;
-    l*o*d*a*s*h.filter = filter;
-    l*o*d*a*s*h.flatMap = flatMap;
-    l*o*d*a*s*h.flatMapDeep = flatMapDeep;
-    l*o*d*a*s*h.flatMapDepth = flatMapDepth;
-    l*o*d*a*s*h.flatten = flatten;
-    l*o*d*a*s*h.flattenDeep = flattenDeep;
-    l*o*d*a*s*h.flattenDepth = flattenDepth;
-    l*o*d*a*s*h.flip = flip;
-    l*o*d*a*s*h.flow = flow;
-    l*o*d*a*s*h.flowRight = flowRight;
-    l*o*d*a*s*h.fromPairs = fromPairs;
-    l*o*d*a*s*h.functions = functions;
-    l*o*d*a*s*h.functionsIn = functionsIn;
-    l*o*d*a*s*h.groupBy = groupBy;
-    l*o*d*a*s*h.initial = initial;
-    l*o*d*a*s*h.intersection = intersection;
-    l*o*d*a*s*h.intersectionBy = intersectionBy;
-    l*o*d*a*s*h.intersectionWith = intersectionWith;
-    l*o*d*a*s*h.invert = invert;
-    l*o*d*a*s*h.invertBy = invertBy;
-    l*o*d*a*s*h.invokeMap = invokeMap;
-    l*o*d*a*s*h.iteratee = iteratee;
-    l*o*d*a*s*h.keyBy = keyBy;
-    l*o*d*a*s*h.keys = keys;
-    l*o*d*a*s*h.keysIn = keysIn;
-    l*o*d*a*s*h.map = map;
-    l*o*d*a*s*h.mapKeys = mapKeys;
-    l*o*d*a*s*h.mapValues = mapValues;
-    l*o*d*a*s*h.matches = matches;
-    l*o*d*a*s*h.matchesProperty = matchesProperty;
-    l*o*d*a*s*h.memoize = memoize;
-    l*o*d*a*s*h.merge = merge;
-    l*o*d*a*s*h.mergeWith = mergeWith;
-    l*o*d*a*s*h.method = method;
-    l*o*d*a*s*h.methodOf = methodOf;
-    l*o*d*a*s*h.mixin = mixin;
-    l*o*d*a*s*h.negate = negate;
-    l*o*d*a*s*h.nthArg = nthArg;
-    l*o*d*a*s*h.omit = omit;
-    l*o*d*a*s*h.omitBy = omitBy;
-    l*o*d*a*s*h.once = once;
-    l*o*d*a*s*h.orderBy = orderBy;
-    l*o*d*a*s*h.over = over;
-    l*o*d*a*s*h.overArgs = overArgs;
-    l*o*d*a*s*h.overEvery = overEvery;
-    l*o*d*a*s*h.overSome = overSome;
-    l*o*d*a*s*h.partial = partial;
-    l*o*d*a*s*h.partialRight = partialRight;
-    l*o*d*a*s*h.partition = partition;
-    l*o*d*a*s*h.pick = pick;
-    l*o*d*a*s*h.pickBy = pickBy;
-    l*o*d*a*s*h.property = property;
-    l*o*d*a*s*h.propertyOf = propertyOf;
-    l*o*d*a*s*h.pull = pull;
-    l*o*d*a*s*h.pullAll = pullAll;
-    l*o*d*a*s*h.pullAllBy = pullAllBy;
-    l*o*d*a*s*h.pullAllWith = pullAllWith;
-    l*o*d*a*s*h.pullAt = pullAt;
-    l*o*d*a*s*h.range = range;
-    l*o*d*a*s*h.rangeRight = rangeRight;
-    l*o*d*a*s*h.rearg = rearg;
-    l*o*d*a*s*h.reject = reject;
-    l*o*d*a*s*h.remove = remove;
-    l*o*d*a*s*h.rest = rest;
-    l*o*d*a*s*h.reverse = reverse;
-    l*o*d*a*s*h.sampleSize = sampleSize;
-    l*o*d*a*s*h.set = set;
-    l*o*d*a*s*h.setWith = setWith;
-    l*o*d*a*s*h.shuffle = shuffle;
-    l*o*d*a*s*h.slice = slice;
-    l*o*d*a*s*h.sortBy = sortBy;
-    l*o*d*a*s*h.sortedUniq = sortedUniq;
-    l*o*d*a*s*h.sortedUniqBy = sortedUniqBy;
-    l*o*d*a*s*h.split = split;
-    l*o*d*a*s*h.spread = spread;
-    l*o*d*a*s*h.tail = tail;
-    l*o*d*a*s*h.take = take;
-    l*o*d*a*s*h.takeRight = takeRight;
-    l*o*d*a*s*h.takeRightWhile = takeRightWhile;
-    l*o*d*a*s*h.takeWhile = takeWhile;
-    l*o*d*a*s*h.tap = tap;
-    l*o*d*a*s*h.throttle = throttle;
-    l*o*d*a*s*h.thru = thru;
-    l*o*d*a*s*h.toArray = toArray;
-    l*o*d*a*s*h.toPairs = toPairs;
-    l*o*d*a*s*h.toPairsIn = toPairsIn;
-    l*o*d*a*s*h.toPath = toPath;
-    l*o*d*a*s*h.toPlainObject = toPlainObject;
-    l*o*d*a*s*h.transform = transform;
-    l*o*d*a*s*h.unary = unary;
-    l*o*d*a*s*h.union = union;
-    l*o*d*a*s*h.unionBy = unionBy;
-    l*o*d*a*s*h.unionWith = unionWith;
-    l*o*d*a*s*h.uniq = uniq;
-    l*o*d*a*s*h.uniqBy = uniqBy;
-    l*o*d*a*s*h.uniqWith = uniqWith;
-    l*o*d*a*s*h.unset = unset;
-    l*o*d*a*s*h.unzip = unzip;
-    l*o*d*a*s*h.unzipWith = unzipWith;
-    l*o*d*a*s*h.update = update;
-    l*o*d*a*s*h.updateWith = updateWith;
-    l*o*d*a*s*h.values = values;
-    l*o*d*a*s*h.valuesIn = valuesIn;
-    l*o*d*a*s*h.without = without;
-    l*o*d*a*s*h.words = words;
-    l*o*d*a*s*h.wrap = wrap;
-    l*o*d*a*s*h.xor = xor;
-    l*o*d*a*s*h.xorBy = xorBy;
-    l*o*d*a*s*h.xorWith = xorWith;
-    l*o*d*a*s*h.zip = zip;
-    l*o*d*a*s*h.zipObject = zipObject;
-    l*o*d*a*s*h.zipObjectDeep = zipObjectDeep;
-    l*o*d*a*s*h.zipWith = zipWith;
+    lodash.after = after;
+    lodash.ary = ary;
+    lodash.assign = assign;
+    lodash.assignIn = assignIn;
+    lodash.assignInWith = assignInWith;
+    lodash.assignWith = assignWith;
+    lodash.at = at;
+    lodash.before = before;
+    lodash.bind = bind;
+    lodash.bindAll = bindAll;
+    lodash.bindKey = bindKey;
+    lodash.castArray = castArray;
+    lodash.chain = chain;
+    lodash.chunk = chunk;
+    lodash.compact = compact;
+    lodash.concat = concat;
+    lodash.cond = cond;
+    lodash.conforms = conforms;
+    lodash.constant = constant;
+    lodash.countBy = countBy;
+    lodash.create = create;
+    lodash.curry = curry;
+    lodash.curryRight = curryRight;
+    lodash.debounce = debounce;
+    lodash.defaults = defaults;
+    lodash.defaultsDeep = defaultsDeep;
+    lodash.defer = defer;
+    lodash.delay = delay;
+    lodash.difference = difference;
+    lodash.differenceBy = differenceBy;
+    lodash.differenceWith = differenceWith;
+    lodash.drop = drop;
+    lodash.dropRight = dropRight;
+    lodash.dropRightWhile = dropRightWhile;
+    lodash.dropWhile = dropWhile;
+    lodash.fill = fill;
+    lodash.filter = filter;
+    lodash.flatMap = flatMap;
+    lodash.flatMapDeep = flatMapDeep;
+    lodash.flatMapDepth = flatMapDepth;
+    lodash.flatten = flatten;
+    lodash.flattenDeep = flattenDeep;
+    lodash.flattenDepth = flattenDepth;
+    lodash.flip = flip;
+    lodash.flow = flow;
+    lodash.flowRight = flowRight;
+    lodash.fromPairs = fromPairs;
+    lodash.functions = functions;
+    lodash.functionsIn = functionsIn;
+    lodash.groupBy = groupBy;
+    lodash.initial = initial;
+    lodash.intersection = intersection;
+    lodash.intersectionBy = intersectionBy;
+    lodash.intersectionWith = intersectionWith;
+    lodash.invert = invert;
+    lodash.invertBy = invertBy;
+    lodash.invokeMap = invokeMap;
+    lodash.iteratee = iteratee;
+    lodash.keyBy = keyBy;
+    lodash.keys = keys;
+    lodash.keysIn = keysIn;
+    lodash.map = map;
+    lodash.mapKeys = mapKeys;
+    lodash.mapValues = mapValues;
+    lodash.matches = matches;
+    lodash.matchesProperty = matchesProperty;
+    lodash.memoize = memoize;
+    lodash.merge = merge;
+    lodash.mergeWith = mergeWith;
+    lodash.method = method;
+    lodash.methodOf = methodOf;
+    lodash.mixin = mixin;
+    lodash.negate = negate;
+    lodash.nthArg = nthArg;
+    lodash.omit = omit;
+    lodash.omitBy = omitBy;
+    lodash.once = once;
+    lodash.orderBy = orderBy;
+    lodash.over = over;
+    lodash.overArgs = overArgs;
+    lodash.overEvery = overEvery;
+    lodash.overSome = overSome;
+    lodash.partial = partial;
+    lodash.partialRight = partialRight;
+    lodash.partition = partition;
+    lodash.pick = pick;
+    lodash.pickBy = pickBy;
+    lodash.property = property;
+    lodash.propertyOf = propertyOf;
+    lodash.pull = pull;
+    lodash.pullAll = pullAll;
+    lodash.pullAllBy = pullAllBy;
+    lodash.pullAllWith = pullAllWith;
+    lodash.pullAt = pullAt;
+    lodash.range = range;
+    lodash.rangeRight = rangeRight;
+    lodash.rearg = rearg;
+    lodash.reject = reject;
+    lodash.remove = remove;
+    lodash.rest = rest;
+    lodash.reverse = reverse;
+    lodash.sampleSize = sampleSize;
+    lodash.set = set;
+    lodash.setWith = setWith;
+    lodash.shuffle = shuffle;
+    lodash.slice = slice;
+    lodash.sortBy = sortBy;
+    lodash.sortedUniq = sortedUniq;
+    lodash.sortedUniqBy = sortedUniqBy;
+    lodash.split = split;
+    lodash.spread = spread;
+    lodash.tail = tail;
+    lodash.take = take;
+    lodash.takeRight = takeRight;
+    lodash.takeRightWhile = takeRightWhile;
+    lodash.takeWhile = takeWhile;
+    lodash.tap = tap;
+    lodash.throttle = throttle;
+    lodash.thru = thru;
+    lodash.toArray = toArray;
+    lodash.toPairs = toPairs;
+    lodash.toPairsIn = toPairsIn;
+    lodash.toPath = toPath;
+    lodash.toPlainObject = toPlainObject;
+    lodash.transform = transform;
+    lodash.unary = unary;
+    lodash.union = union;
+    lodash.unionBy = unionBy;
+    lodash.unionWith = unionWith;
+    lodash.uniq = uniq;
+    lodash.uniqBy = uniqBy;
+    lodash.uniqWith = uniqWith;
+    lodash.unset = unset;
+    lodash.unzip = unzip;
+    lodash.unzipWith = unzipWith;
+    lodash.update = update;
+    lodash.updateWith = updateWith;
+    lodash.values = values;
+    lodash.valuesIn = valuesIn;
+    lodash.without = without;
+    lodash.words = words;
+    lodash.wrap = wrap;
+    lodash.xor = xor;
+    lodash.xorBy = xorBy;
+    lodash.xorWith = xorWith;
+    lodash.zip = zip;
+    lodash.zipObject = zipObject;
+    lodash.zipObjectDeep = zipObjectDeep;
+    lodash.zipWith = zipWith;
 
     // Add aliases.
-    l*o*d*a*s*h.entries = toPairs;
-    l*o*d*a*s*h.entriesIn = toPairsIn;
-    l*o*d*a*s*h.extend = assignIn;
-    l*o*d*a*s*h.extendWith = assignInWith;
+    lodash.entries = toPairs;
+    lodash.entriesIn = toPairsIn;
+    lodash.extend = assignIn;
+    lodash.extendWith = assignInWith;
 
-    // Add methods to `l*o*d*a*s*h.prototype`.
-    mixin(l*o*d*a*s*h, l*o*d*a*s*h);
+    // Add methods to `lodash.prototype`.
+    mixin(lodash, lodash);
 
     /*------------------------------------------------------------------------*/
 
     // Add methods that return unwrapped values in chain sequences.
-    l*o*d*a*s*h.add = add;
-    l*o*d*a*s*h.attempt = attempt;
-    l*o*d*a*s*h.camelCase = camelCase;
-    l*o*d*a*s*h.capitalize = capitalize;
-    l*o*d*a*s*h.ceil = ceil;
-    l*o*d*a*s*h.clamp = clamp;
-    l*o*d*a*s*h.clone = clone;
-    l*o*d*a*s*h.cloneDeep = cloneDeep;
-    l*o*d*a*s*h.cloneDeepWith = cloneDeepWith;
-    l*o*d*a*s*h.cloneWith = cloneWith;
-    l*o*d*a*s*h.conformsTo = conformsTo;
-    l*o*d*a*s*h.deburr = deburr;
-    l*o*d*a*s*h.defaultTo = defaultTo;
-    l*o*d*a*s*h.divide = divide;
-    l*o*d*a*s*h.endsWith = endsWith;
-    l*o*d*a*s*h.eq = eq;
-    l*o*d*a*s*h.escape = escape;
-    l*o*d*a*s*h.escapeRegExp = escapeRegExp;
-    l*o*d*a*s*h.every = every;
-    l*o*d*a*s*h.find = find;
-    l*o*d*a*s*h.findIndex = findIndex;
-    l*o*d*a*s*h.findKey = findKey;
-    l*o*d*a*s*h.findLast = findLast;
-    l*o*d*a*s*h.findLastIndex = findLastIndex;
-    l*o*d*a*s*h.findLastKey = findLastKey;
-    l*o*d*a*s*h.floor = floor;
-    l*o*d*a*s*h.forEach = forEach;
-    l*o*d*a*s*h.forEachRight = forEachRight;
-    l*o*d*a*s*h.forIn = forIn;
-    l*o*d*a*s*h.forInRight = forInRight;
-    l*o*d*a*s*h.forOwn = forOwn;
-    l*o*d*a*s*h.forOwnRight = forOwnRight;
-    l*o*d*a*s*h.get = get;
-    l*o*d*a*s*h.gt = gt;
-    l*o*d*a*s*h.gte = gte;
-    l*o*d*a*s*h.has = has;
-    l*o*d*a*s*h.hasIn = hasIn;
-    l*o*d*a*s*h.head = head;
-    l*o*d*a*s*h.identity = identity;
-    l*o*d*a*s*h.includes = includes;
-    l*o*d*a*s*h.indexOf = indexOf;
-    l*o*d*a*s*h.inRange = inRange;
-    l*o*d*a*s*h.invoke = invoke;
-    l*o*d*a*s*h.isArguments = isArguments;
-    l*o*d*a*s*h.isArray = isArray;
-    l*o*d*a*s*h.isArrayBuffer = isArrayBuffer;
-    l*o*d*a*s*h.isArrayLike = isArrayLike;
-    l*o*d*a*s*h.isArrayLikeObject = isArrayLikeObject;
-    l*o*d*a*s*h.isBoolean = isBoolean;
-    l*o*d*a*s*h.isBuffer = isBuffer;
-    l*o*d*a*s*h.isDate = isDate;
-    l*o*d*a*s*h.isElement = isElement;
-    l*o*d*a*s*h.isEmpty = isEmpty;
-    l*o*d*a*s*h.isEqual = isEqual;
-    l*o*d*a*s*h.isEqualWith = isEqualWith;
-    l*o*d*a*s*h.isError = isError;
-    l*o*d*a*s*h.isFinite = isFinite;
-    l*o*d*a*s*h.isFunction = isFunction;
-    l*o*d*a*s*h.isInteger = isInteger;
-    l*o*d*a*s*h.isLength = isLength;
-    l*o*d*a*s*h.isMap = isMap;
-    l*o*d*a*s*h.isMatch = isMatch;
-    l*o*d*a*s*h.isMatchWith = isMatchWith;
-    l*o*d*a*s*h.isNaN = isNaN;
-    l*o*d*a*s*h.isNative = isNative;
-    l*o*d*a*s*h.isNil = isNil;
-    l*o*d*a*s*h.isNull = isNull;
-    l*o*d*a*s*h.isNumber = isNumber;
-    l*o*d*a*s*h.isObject = isObject;
-    l*o*d*a*s*h.isObjectLike = isObjectLike;
-    l*o*d*a*s*h.isPlainObject = isPlainObject;
-    l*o*d*a*s*h.isRegExp = isRegExp;
-    l*o*d*a*s*h.isSafeInteger = isSafeInteger;
-    l*o*d*a*s*h.isSet = isSet;
-    l*o*d*a*s*h.isString = isString;
-    l*o*d*a*s*h.isSymbol = isSymbol;
-    l*o*d*a*s*h.isTypedArray = isTypedArray;
-    l*o*d*a*s*h.isUndefined = isUndefined;
-    l*o*d*a*s*h.isWeakMap = isWeakMap;
-    l*o*d*a*s*h.isWeakSet = isWeakSet;
-    l*o*d*a*s*h.join = join;
-    l*o*d*a*s*h.kebabCase = kebabCase;
-    l*o*d*a*s*h.last = last;
-    l*o*d*a*s*h.lastIndexOf = lastIndexOf;
-    l*o*d*a*s*h.lowerCase = lowerCase;
-    l*o*d*a*s*h.lowerFirst = lowerFirst;
-    l*o*d*a*s*h.lt = lt;
-    l*o*d*a*s*h.lte = lte;
-    l*o*d*a*s*h.max = max;
-    l*o*d*a*s*h.maxBy = maxBy;
-    l*o*d*a*s*h.mean = mean;
-    l*o*d*a*s*h.meanBy = meanBy;
-    l*o*d*a*s*h.min = min;
-    l*o*d*a*s*h.minBy = minBy;
-    l*o*d*a*s*h.stubArray = stubArray;
-    l*o*d*a*s*h.stubFalse = stubFalse;
-    l*o*d*a*s*h.stubObject = stubObject;
-    l*o*d*a*s*h.stubString = stubString;
-    l*o*d*a*s*h.stubTrue = stubTrue;
-    l*o*d*a*s*h.multiply = multiply;
-    l*o*d*a*s*h.nth = nth;
-    l*o*d*a*s*h.noConflict = noConflict;
-    l*o*d*a*s*h.noop = noop;
-    l*o*d*a*s*h.now = now;
-    l*o*d*a*s*h.pad = pad;
-    l*o*d*a*s*h.padEnd = padEnd;
-    l*o*d*a*s*h.padStart = padStart;
-    l*o*d*a*s*h.parseInt = parseInt;
-    l*o*d*a*s*h.random = random;
-    l*o*d*a*s*h.reduce = reduce;
-    l*o*d*a*s*h.reduceRight = reduceRight;
-    l*o*d*a*s*h.repeat = repeat;
-    l*o*d*a*s*h.replace = replace;
-    l*o*d*a*s*h.result = result;
-    l*o*d*a*s*h.round = round;
-    l*o*d*a*s*h.runInContext = runInContext;
-    l*o*d*a*s*h.sample = sample;
-    l*o*d*a*s*h.size = size;
-    l*o*d*a*s*h.snakeCase = snakeCase;
-    l*o*d*a*s*h.some = some;
-    l*o*d*a*s*h.sortedIndex = sortedIndex;
-    l*o*d*a*s*h.sortedIndexBy = sortedIndexBy;
-    l*o*d*a*s*h.sortedIndexOf = sortedIndexOf;
-    l*o*d*a*s*h.sortedLastIndex = sortedLastIndex;
-    l*o*d*a*s*h.sortedLastIndexBy = sortedLastIndexBy;
-    l*o*d*a*s*h.sortedLastIndexOf = sortedLastIndexOf;
-    l*o*d*a*s*h.startCase = startCase;
-    l*o*d*a*s*h.startsWith = startsWith;
-    l*o*d*a*s*h.subtract = subtract;
-    l*o*d*a*s*h.sum = sum;
-    l*o*d*a*s*h.sumBy = sumBy;
-    l*o*d*a*s*h.template = template;
-    l*o*d*a*s*h.times = times;
-    l*o*d*a*s*h.toFinite = toFinite;
-    l*o*d*a*s*h.toInteger = toInteger;
-    l*o*d*a*s*h.toLength = toLength;
-    l*o*d*a*s*h.toLower = toLower;
-    l*o*d*a*s*h.toNumber = toNumber;
-    l*o*d*a*s*h.toSafeInteger = toSafeInteger;
-    l*o*d*a*s*h.toString = toString;
-    l*o*d*a*s*h.toUpper = toUpper;
-    l*o*d*a*s*h.trim = trim;
-    l*o*d*a*s*h.trimEnd = trimEnd;
-    l*o*d*a*s*h.trimStart = trimStart;
-    l*o*d*a*s*h.truncate = truncate;
-    l*o*d*a*s*h.unescape = unescape;
-    l*o*d*a*s*h.uniqueId = uniqueId;
-    l*o*d*a*s*h.upperCase = upperCase;
-    l*o*d*a*s*h.upperFirst = upperFirst;
+    lodash.add = add;
+    lodash.attempt = attempt;
+    lodash.camelCase = camelCase;
+    lodash.capitalize = capitalize;
+    lodash.ceil = ceil;
+    lodash.clamp = clamp;
+    lodash.clone = clone;
+    lodash.cloneDeep = cloneDeep;
+    lodash.cloneDeepWith = cloneDeepWith;
+    lodash.cloneWith = cloneWith;
+    lodash.conformsTo = conformsTo;
+    lodash.deburr = deburr;
+    lodash.defaultTo = defaultTo;
+    lodash.divide = divide;
+    lodash.endsWith = endsWith;
+    lodash.eq = eq;
+    lodash.escape = escape;
+    lodash.escapeRegExp = escapeRegExp;
+    lodash.every = every;
+    lodash.find = find;
+    lodash.findIndex = findIndex;
+    lodash.findKey = findKey;
+    lodash.findLast = findLast;
+    lodash.findLastIndex = findLastIndex;
+    lodash.findLastKey = findLastKey;
+    lodash.floor = floor;
+    lodash.forEach = forEach;
+    lodash.forEachRight = forEachRight;
+    lodash.forIn = forIn;
+    lodash.forInRight = forInRight;
+    lodash.forOwn = forOwn;
+    lodash.forOwnRight = forOwnRight;
+    lodash.get = get;
+    lodash.gt = gt;
+    lodash.gte = gte;
+    lodash.has = has;
+    lodash.hasIn = hasIn;
+    lodash.head = head;
+    lodash.identity = identity;
+    lodash.includes = includes;
+    lodash.indexOf = indexOf;
+    lodash.inRange = inRange;
+    lodash.invoke = invoke;
+    lodash.isArguments = isArguments;
+    lodash.isArray = isArray;
+    lodash.isArrayBuffer = isArrayBuffer;
+    lodash.isArrayLike = isArrayLike;
+    lodash.isArrayLikeObject = isArrayLikeObject;
+    lodash.isBoolean = isBoolean;
+    lodash.isBuffer = isBuffer;
+    lodash.isDate = isDate;
+    lodash.isElement = isElement;
+    lodash.isEmpty = isEmpty;
+    lodash.isEqual = isEqual;
+    lodash.isEqualWith = isEqualWith;
+    lodash.isError = isError;
+    lodash.isFinite = isFinite;
+    lodash.isFunction = isFunction;
+    lodash.isInteger = isInteger;
+    lodash.isLength = isLength;
+    lodash.isMap = isMap;
+    lodash.isMatch = isMatch;
+    lodash.isMatchWith = isMatchWith;
+    lodash.isNaN = isNaN;
+    lodash.isNative = isNative;
+    lodash.isNil = isNil;
+    lodash.isNull = isNull;
+    lodash.isNumber = isNumber;
+    lodash.isObject = isObject;
+    lodash.isObjectLike = isObjectLike;
+    lodash.isPlainObject = isPlainObject;
+    lodash.isRegExp = isRegExp;
+    lodash.isSafeInteger = isSafeInteger;
+    lodash.isSet = isSet;
+    lodash.isString = isString;
+    lodash.isSymbol = isSymbol;
+    lodash.isTypedArray = isTypedArray;
+    lodash.isUndefined = isUndefined;
+    lodash.isWeakMap = isWeakMap;
+    lodash.isWeakSet = isWeakSet;
+    lodash.join = join;
+    lodash.kebabCase = kebabCase;
+    lodash.last = last;
+    lodash.lastIndexOf = lastIndexOf;
+    lodash.lowerCase = lowerCase;
+    lodash.lowerFirst = lowerFirst;
+    lodash.lt = lt;
+    lodash.lte = lte;
+    lodash.max = max;
+    lodash.maxBy = maxBy;
+    lodash.mean = mean;
+    lodash.meanBy = meanBy;
+    lodash.min = min;
+    lodash.minBy = minBy;
+    lodash.stubArray = stubArray;
+    lodash.stubFalse = stubFalse;
+    lodash.stubObject = stubObject;
+    lodash.stubString = stubString;
+    lodash.stubTrue = stubTrue;
+    lodash.multiply = multiply;
+    lodash.nth = nth;
+    lodash.noConflict = noConflict;
+    lodash.noop = noop;
+    lodash.now = now;
+    lodash.pad = pad;
+    lodash.padEnd = padEnd;
+    lodash.padStart = padStart;
+    lodash.parseInt = parseInt;
+    lodash.random = random;
+    lodash.reduce = reduce;
+    lodash.reduceRight = reduceRight;
+    lodash.repeat = repeat;
+    lodash.replace = replace;
+    lodash.result = result;
+    lodash.round = round;
+    lodash.runInContext = runInContext;
+    lodash.sample = sample;
+    lodash.size = size;
+    lodash.snakeCase = snakeCase;
+    lodash.some = some;
+    lodash.sortedIndex = sortedIndex;
+    lodash.sortedIndexBy = sortedIndexBy;
+    lodash.sortedIndexOf = sortedIndexOf;
+    lodash.sortedLastIndex = sortedLastIndex;
+    lodash.sortedLastIndexBy = sortedLastIndexBy;
+    lodash.sortedLastIndexOf = sortedLastIndexOf;
+    lodash.startCase = startCase;
+    lodash.startsWith = startsWith;
+    lodash.subtract = subtract;
+    lodash.sum = sum;
+    lodash.sumBy = sumBy;
+    lodash.template = template;
+    lodash.times = times;
+    lodash.toFinite = toFinite;
+    lodash.toInteger = toInteger;
+    lodash.toLength = toLength;
+    lodash.toLower = toLower;
+    lodash.toNumber = toNumber;
+    lodash.toSafeInteger = toSafeInteger;
+    lodash.toString = toString;
+    lodash.toUpper = toUpper;
+    lodash.trim = trim;
+    lodash.trimEnd = trimEnd;
+    lodash.trimStart = trimStart;
+    lodash.truncate = truncate;
+    lodash.unescape = unescape;
+    lodash.uniqueId = uniqueId;
+    lodash.upperCase = upperCase;
+    lodash.upperFirst = upperFirst;
 
     // Add aliases.
-    l*o*d*a*s*h.each = forEach;
-    l*o*d*a*s*h.eachRight = forEachRight;
-    l*o*d*a*s*h.first = head;
+    lodash.each = forEach;
+    lodash.eachRight = forEachRight;
+    lodash.first = head;
 
-    mixin(l*o*d*a*s*h, (function() {
+    mixin(lodash, (function() {
       var source = {};
-      baseForOwn(l*o*d*a*s*h, function(func, methodName) {
-        if (!hasOwnProperty.call(l*o*d*a*s*h.prototype, methodName)) {
+      baseForOwn(lodash, function(func, methodName) {
+        if (!hasOwnProperty.call(lodash.prototype, methodName)) {
           source[methodName] = func;
         }
       });
@@ -51444,11 +51444,11 @@ module.exports = Array.isArray || function (arr) {
      * @memberOf _
      * @type {string}
      */
-    l*o*d*a*s*h.VERSION = VERSION;
+    lodash.VERSION = VERSION;
 
     // Assign default placeholders.
     arrayEach(['bind', 'bindKey', 'curry', 'curryRight', 'partial', 'partialRight'], function(methodName) {
-      l*o*d*a*s*h[methodName].placeholder = l*o*d*a*s*h;
+      lodash[methodName].placeholder = lodash;
     });
 
     // Add `LazyWrapper` methods for `_.drop` and `_.take` variants.
@@ -51563,17 +51563,17 @@ module.exports = Array.isArray || function (arr) {
       return this.take(MAX_ARRAY_LENGTH);
     };
 
-    // Add `LazyWrapper` methods to `l*o*d*a*s*h.prototype`.
+    // Add `LazyWrapper` methods to `lodash.prototype`.
     baseForOwn(LazyWrapper.prototype, function(func, methodName) {
       var checkIteratee = /^(?:filter|find|map|reject)|While$/.test(methodName),
           isTaker = /^(?:head|last)$/.test(methodName),
-          l*o*d*a*s*hFunc = l*o*d*a*s*h[isTaker ? ('take' + (methodName == 'last' ? 'Right' : '')) : methodName],
+          lodashFunc = lodash[isTaker ? ('take' + (methodName == 'last' ? 'Right' : '')) : methodName],
           retUnwrapped = isTaker || /^find/.test(methodName);
 
-      if (!l*o*d*a*s*hFunc) {
+      if (!lodashFunc) {
         return;
       }
-      l*o*d*a*s*h.prototype[methodName] = function() {
+      lodash.prototype[methodName] = function() {
         var value = this.__wrapped__,
             args = isTaker ? [1] : arguments,
             isLazy = value instanceof LazyWrapper,
@@ -51581,7 +51581,7 @@ module.exports = Array.isArray || function (arr) {
             useLazy = isLazy || isArray(value);
 
         var interceptor = function(value) {
-          var result = l*o*d*a*s*hFunc.apply(l*o*d*a*s*h, arrayPush([value], args));
+          var result = lodashFunc.apply(lodash, arrayPush([value], args));
           return (isTaker && chainAll) ? result[0] : result;
         };
 
@@ -51598,7 +51598,7 @@ module.exports = Array.isArray || function (arr) {
           value = onlyLazy ? value : new LazyWrapper(this);
           var result = func.apply(value, args);
           result.__actions__.push({ 'func': thru, 'args': [interceptor], 'thisArg': undefined });
-          return new L*o*d*a*s*hWrapper(result, chainAll);
+          return new LodashWrapper(result, chainAll);
         }
         if (isUnwrapped && onlyLazy) {
           return func.apply(this, args);
@@ -51608,13 +51608,13 @@ module.exports = Array.isArray || function (arr) {
       };
     });
 
-    // Add `Array` methods to `l*o*d*a*s*h.prototype`.
+    // Add `Array` methods to `lodash.prototype`.
     arrayEach(['pop', 'push', 'shift', 'sort', 'splice', 'unshift'], function(methodName) {
       var func = arrayProto[methodName],
           chainName = /^(?:push|sort|unshift)$/.test(methodName) ? 'tap' : 'thru',
           retUnwrapped = /^(?:pop|shift)$/.test(methodName);
 
-      l*o*d*a*s*h.prototype[methodName] = function() {
+      lodash.prototype[methodName] = function() {
         var args = arguments;
         if (retUnwrapped && !this.__chain__) {
           var value = this.value();
@@ -51628,12 +51628,12 @@ module.exports = Array.isArray || function (arr) {
 
     // Map minified method names to their real names.
     baseForOwn(LazyWrapper.prototype, function(func, methodName) {
-      var l*o*d*a*s*hFunc = l*o*d*a*s*h[methodName];
-      if (l*o*d*a*s*hFunc) {
-        var key = (l*o*d*a*s*hFunc.name + ''),
+      var lodashFunc = lodash[methodName];
+      if (lodashFunc) {
+        var key = (lodashFunc.name + ''),
             names = realNames[key] || (realNames[key] = []);
 
-        names.push({ 'name': methodName, 'func': l*o*d*a*s*hFunc });
+        names.push({ 'name': methodName, 'func': lodashFunc });
       }
     });
 
@@ -51647,35 +51647,35 @@ module.exports = Array.isArray || function (arr) {
     LazyWrapper.prototype.reverse = lazyReverse;
     LazyWrapper.prototype.value = lazyValue;
 
-    // Add chain sequence methods to the `l*o*d*a*s*h` wrapper.
-    l*o*d*a*s*h.prototype.at = wrapperAt;
-    l*o*d*a*s*h.prototype.chain = wrapperChain;
-    l*o*d*a*s*h.prototype.commit = wrapperCommit;
-    l*o*d*a*s*h.prototype.next = wrapperNext;
-    l*o*d*a*s*h.prototype.plant = wrapperPlant;
-    l*o*d*a*s*h.prototype.reverse = wrapperReverse;
-    l*o*d*a*s*h.prototype.toJSON = l*o*d*a*s*h.prototype.valueOf = l*o*d*a*s*h.prototype.value = wrapperValue;
+    // Add chain sequence methods to the `lodash` wrapper.
+    lodash.prototype.at = wrapperAt;
+    lodash.prototype.chain = wrapperChain;
+    lodash.prototype.commit = wrapperCommit;
+    lodash.prototype.next = wrapperNext;
+    lodash.prototype.plant = wrapperPlant;
+    lodash.prototype.reverse = wrapperReverse;
+    lodash.prototype.toJSON = lodash.prototype.valueOf = lodash.prototype.value = wrapperValue;
 
     // Add lazy aliases.
-    l*o*d*a*s*h.prototype.first = l*o*d*a*s*h.prototype.head;
+    lodash.prototype.first = lodash.prototype.head;
 
     if (symIterator) {
-      l*o*d*a*s*h.prototype[symIterator] = wrapperToIterator;
+      lodash.prototype[symIterator] = wrapperToIterator;
     }
-    return l*o*d*a*s*h;
+    return lodash;
   });
 
   /*--------------------------------------------------------------------------*/
 
-  // Export l*o*d*a*s*h.
+  // Export lodash.
   var _ = runInContext();
 
   // Some AMD build optimizers, like r.js, check for condition patterns like:
   if (typeof define == 'function' && typeof define.amd == 'object' && define.amd) {
-    // Expose L*o*d*a*s*h on the global object to prevent errors when L*o*d*a*s*h is
+    // Expose Lodash on the global object to prevent errors when Lodash is
     // loaded by a script tag in the presence of an AMD loader.
     // See http://requirejs.org/docs/errors.html#mismatch for more details.
-    // Use `_.noConflict` to remove L*o*d*a*s*h from the global object.
+    // Use `_.noConflict` to remove Lodash from the global object.
     root._ = _;
 
     // Define as an anonymous module so, through path mapping, it can be
@@ -66732,7 +66732,7 @@ module.exports={
     "buffer-compare": "=1.0.0",
     "elliptic": "=3.0.3",
     "inherits": "=2.0.1",
-    "l*o*d*a*s*h": "=4.17.1",
+    "lodash": "=4.17.1",
     "sha512": "=0.0.1",
     "x11-hash-js": "^1.0.0"
   },

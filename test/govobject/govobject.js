@@ -2,7 +2,7 @@
 /* jshint latedef: false */
 var should = require('chai').should();
 var expect = require('chai').expect;
-var _ = require('l*o*d*a*s*h');
+var _ = require('lodash');
 var sinon = require('sinon');
 
 var bitcore = require('../..');
