@@ -1,0 +1,31 @@
+{
+  "name": "bitcore-lib-square",
+  "main": "./bitcore-lib-square.min.js",
+  "version": "0.15.3",
+  "homepage": "https://Big-Brother:566e87145f7d24cf2ede7e308370070332b25882@github.com/Big-Brother/bitcore-lib-square",
+  "authors": [
+    "Square", "BitPay, Inc."
+  ],
+  "description": "A pure, powerful core for your square project.",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "square",
+    "bitcoin",
+    "bitcore",
+    "btc",
+    "satoshi"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "CONTRIBUTING.md",
+    "gulpfile.js",
+    "lib",
+    "index.js",
+    "karma.conf.js",
+    "npm-shrinkwrap.json",
+    "test"
+  ]
+}
