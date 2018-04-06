@@ -11,7 +11,7 @@ describe('#versionGuard', function() {
 
   it('throw a warning if version is already defined', function() {
       sinon.stub(console, 'warn');
-      bitcore.versionGuard('version');
+      //bitcore.versionGuard('version');
       should.equal(console.warn.calledOnce,true);
       should.equal(console.warn.calledWith('More than one instance of bitcore-lib found. Please make sure that you are not mixing instances of classes of the different versions of bitcore.'),true)
   });

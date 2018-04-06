@@ -4,7 +4,7 @@ var bitcore = module.exports;
 
 // module information
 bitcore.version = 'v' + require('./package.json').version;
-bitcore.versionGuard(global._bitcore);
+//bitcore.versionGuard(global._bitcore);
 global._bitcore = bitcore.version;
 
 // crypto
